@@ -1,21 +1,18 @@
-# Динамическая типизация с подсказками
-v1 : int = 10
-v2 : float = 3.14
-v3 : str = 'Это строка'
-v4 : bool = True
-print(f'v1 is {type(v1)}')
-print(f'v2 is {type(v2)}')
-print(f'v3 is {type(v3)}')
-print(f'v4 is {type(v4)}')
+s: str = "Hello, world!"
+# Ошибка - переменная s должна быть строчным значением
+s = 10
+print(s)  # Вывод: 10
 
-print('----------------------')
+def multiply(x: int, y: int) -> int:
+    return x * y
 
-v4 = 10
-v3 = 3.14
-v2 = 'Это строка'
-v1 = True
-print(f'v1 is {type(v1)}')
-print(f'v2 is {type(v2)}')
-print(f'v3 is {type(v3)}')
-print(f'v4 is {type(v4)}')
+result1 = multiply(5, 10)
+print(result1)  # Вывод: 50
 
+# Ошибка типа - второй аргумент должен быть целым числом
+result2 = multiply(5, "hello")
+print(result2) # Вывод: hellohellohellohellohello
+
+# Ошибка - переменная result3 должна быть строчным значением
+result3:str = multiply(10, 20)
+print(result3)  # Вывод: 200
