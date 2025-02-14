@@ -5,6 +5,6 @@ def bubble_sort(a):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
 
-sorted_array = [1,5,2,8,5,6,0]
+sorted_array = [4,3,6,1,5,2]
 bubble_sort(sorted_array)
 print(sorted_array)
