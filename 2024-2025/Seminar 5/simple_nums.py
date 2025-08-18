@@ -18,5 +18,5 @@ def is_simple2(n):
         if is_simple:
            print(i)
 
-is_simple(20)
+is_simple2(20)
 
