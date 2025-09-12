@@ -10,7 +10,10 @@ def roman_to_arabic():
     index = 0
     arabic_number = 0
     while index < len(roman_number):
-        if index == len(roman_number) - 1 or roman_numerals[roman_number[index]] >= roman_numerals[roman_number[index + 1]]:
+        if (
+          index == len(roman_number) - 1
+          or roman_numerals[roman_number[index]] >= roman_numerals[roman_number[index + 1]]
+        ):
             arabic_number += roman_numerals[roman_number[index]]
             index += 1
         else:
