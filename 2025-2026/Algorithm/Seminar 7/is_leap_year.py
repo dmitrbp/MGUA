@@ -11,17 +11,17 @@ def is_leap_year(year):
     else:
         return True
 
-def check_leap_year(year):
-    """
-    Полная проверка с выводом результата
-    """
-    if is_leap_year(year):
-        return f"{year} год - високосный"
-    else:
-        return f"{year} год - не високосный"
 
-# Примеры использования
-print(check_leap_year(2020))  # 2020 год - високосный
-print(check_leap_year(2021))  # 2021 год - не високосный
-print(check_leap_year(2000))  # 2000 год - високосный
-print(check_leap_year(1900))  # 1900 год - не високосный
+# Пример использования
+# -------------------------
+# 2020 год - високосный
+# 2021 год - не високосный
+# 2000 год - високосный
+# 1900 год - не високосный
+
+year = int(input("Введите год для определения: "))
+is_value = is_leap_year(year)
+if(is_value):
+    print(f"{year} год - високосный")
+else:
+    print(f"{year} год - не високосный")
