@@ -1,6 +1,6 @@
 # Полное ветвление без elif: есть/нет в списке
 fruits = ["apple", "banana", "orange"]
-fruit_to_check = "apple"
+fruit_to_check = "banana"
 
 if fruit_to_check in fruits:
     exists = "Найден в списке"

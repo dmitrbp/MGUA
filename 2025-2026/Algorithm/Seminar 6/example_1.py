@@ -1,14 +1,9 @@
-# Неполное ветвление: проверка возраста
-age = int(input("Возраст пользователя:"))
-print(f"Ваш возраст: {age} лет")
+price = int(input("Введите цену: "))
+price_threshold  = int(input("Введите пороговую цену: "))
+discount = int(input("Введите скидку: "))
 
-if age >= 18:
-    print("Доступ к взрослому контенту разрешен.")
-    print("Пожалуйста, соблюдайте правила сообщества.")
-    # Здесь могла бы быть дополнительная логика, например:
-    # show_adult_content()
-    # log_access_attempt(user_id, success=True)
+if price > price_threshold:
+    price = price * (1 - discount / 100)
+    print(f"Применена скидка {discount}%!")
 
-# Этот код выполнится для ВСЕХ пользователей
-print("Добро пожаловать на наш сайт!")
-print("Наслаждайтесь просмотром.")
+print(f"Итоговая цена: {price} руб.")
