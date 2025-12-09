@@ -13,7 +13,7 @@ def celsius_to_fahrenheit(celsius_temp):
 current_temp_celsius = 20
 
 # Определяем страну пользователя (пример)
-user_country_code = 'US'  # Допустим, пользователь из США
+user_country_code = 'RU'  # Допустим, пользователь из США
 
 # Получаем нужную единицу измерения для пользователя
 temp_unit = get_temperature_unit(user_country_code)
