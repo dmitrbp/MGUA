@@ -20,11 +20,11 @@ def score_to_grade(score):
         grade = "D"
         comment = "Неудовлетворительно"
 
-    return f"Оценка: {grade} ({comment})"
+    return f"Числовая оценка: {score} Буквенная оценка: {grade} ({comment})"
 
 
 # Примеры использования
 print(score_to_grade(95))  # Оценка: A (Отлично)
-print(score_to_grade(74))  # Оценка: B (Хорошо)
+print(score_to_grade(94))  # Оценка: B (Хорошо)
 print(score_to_grade(40))  # Оценка: C (Удовлетворительно)
 print(score_to_grade(20))  # Оценка: D (Неудовлетворительно)
