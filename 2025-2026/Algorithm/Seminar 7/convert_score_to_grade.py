@@ -25,6 +25,6 @@ def score_to_grade(score):
 
 # Примеры использования
 print(score_to_grade(95))  # Оценка: A (Отлично)
-print(score_to_grade(94))  # Оценка: B (Хорошо)
+print(score_to_grade(71))  # Оценка: B (Хорошо)
 print(score_to_grade(40))  # Оценка: C (Удовлетворительно)
 print(score_to_grade(20))  # Оценка: D (Неудовлетворительно)

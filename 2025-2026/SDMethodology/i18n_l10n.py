@@ -5,15 +5,17 @@ def get_temperature_unit(country_code):
     else:
         return 'Celsius'
 
+
 # Функция для конвертации температуры из Цельсия в Фаренгейт
 def celsius_to_fahrenheit(celsius_temp):
-    return (celsius_temp * 9/5) + 32
+    return (celsius_temp * 9 / 5) + 32
+
 
 # Предположим, у нас есть температура в Цельсиях
 current_temp_celsius = 20
 
 # Определяем страну пользователя (пример)
-user_country_code = 'RU'  # Допустим, пользователь из США
+user_country_code = 'US'  # Допустим, пользователь из США
 
 # Получаем нужную единицу измерения для пользователя
 temp_unit = get_temperature_unit(user_country_code)
