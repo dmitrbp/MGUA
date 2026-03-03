@@ -16,7 +16,7 @@ def sqrt_newton(n, epsilon=1e-10):
     return guess
 
 
-n = 25
+n = 35
 print(f"Исходное число: {n}")
 result = sqrt_newton(n)
 print(f"Квадратный корень: {result}")
