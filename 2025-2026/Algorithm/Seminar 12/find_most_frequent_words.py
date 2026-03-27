@@ -36,5 +36,5 @@ def find_most_frequent_words(text):
     return result
 
 print(find_most_frequent_words(
-    "This is the first sentence. This is for clean and for frequency calculation. This is sample")
+    "This is the first sentence. This is for clean and for frequency calculation. This is sample. It is true")
 )
