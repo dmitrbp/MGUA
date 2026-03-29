@@ -32,4 +32,4 @@ def print_arr(arr, j = 0, is_swap = False, step = 0):
 
     print(f"\rstep {step}: {s}", end='')
 
-bubble_sort([0, 5, 4, 3, 2, 1])
+bubble_sort([5, 4, 3, 2, 1])

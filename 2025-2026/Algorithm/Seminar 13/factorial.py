@@ -22,5 +22,5 @@ def factorial_up(n, current=1, acc=1):
 
 
 
-print(factorial_down(5))  # Вывод: 120
-print(factorial_up(5))
+print(factorial_down(9))  # Вывод: 120
+print(factorial_up(9))
