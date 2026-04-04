@@ -1,5 +1,6 @@
 def quicksort(arr):
     """Быстрая сортировка (создает новый массив)"""
+    print(arr)
     if len(arr) <= 1:
         return arr
 
@@ -8,7 +9,11 @@ def quicksort(arr):
     middle = [x for x in arr if x == pivot]
     right = [x for x in arr if x > pivot]
 
-    return quicksort(left) + middle + quicksort(right)
+    print("left: ", left, "middle: ", middle, "right:", right)
+
+    res =  quicksort(left) + middle + quicksort(right)
+    print("res: ", res)
+    return res
 
 
 # Пример использования

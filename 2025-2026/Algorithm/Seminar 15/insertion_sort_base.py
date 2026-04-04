@@ -10,9 +10,11 @@ def insertion_sort_base(arr):
 
         # Вставляем key на правильную позицию
         arr[j + 1] = key
+        print("i=", i, "arr=", arr)
 
 
 # Пример использования
-my_list = [5, 2, 4, 6, 1, 3]
+my_list = [2, 5, 3, 6, 8, 1, 4, 7]
+print(my_list)
 insertion_sort_base(my_list)
-print(my_list)  # [1, 2, 3, 4, 5, 6]
+print(my_list)

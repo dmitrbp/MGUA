@@ -12,8 +12,10 @@ def comb_sort(arr):
 
         # Один проход с текущим gap
         for i in range(n - gap):
+            print("gap=", gap, "arr[i]=", arr[i], "arr[i+gap]=", arr[i + gap], "list=", my_list)
             if arr[i] > arr[i + gap]:
                 arr[i], arr[i + gap] = arr[i + gap], arr[i]
+                print("!gap=", gap, "arr[i]=", arr[i], "arr[i+gap]=", arr[i + gap], "list=", my_list)
                 swapped = True
 
 

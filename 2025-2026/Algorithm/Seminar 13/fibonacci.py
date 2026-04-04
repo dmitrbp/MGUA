@@ -23,12 +23,13 @@ def fibonacci_memo(n, memo={}):
 
 
 # setrecursionlimit(10000)
-start_time = time.time()
+start_time1 = time.time()
 f1 = fibonacci(40)
-end_time = time.time()
-print(f"f1 = {f1}, Elapsed: {(end_time - start_time):.8f} seconds")
+end_time1 = time.time()
+print(f"f1 = {f1}, Elapsed: {(end_time1 - start_time1):.8f} seconds")
 
-start_time = time.time()
+start_time2 = time.time()
 f2 = fibonacci_memo(40)
-end_time = time.time()
-print(f"f2 = {f2}, Elapsed: {(end_time - start_time):.8f} seconds")
+end_time2 = time.time()
+print(f"f2 = {f2}, Elapsed: {(end_time2 - start_time2):.8f} seconds")
+print(f"rel = {(end_time1 - start_time1)/(end_time2 - start_time2)}")
